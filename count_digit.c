@@ -7,16 +7,28 @@ int main (){
     printf("Enter a digit to count:  ");
     scanf("%d", &inputDigit);
 
-    int i =0;
-    for ( i; inputDigit != 0; i++)
-    {
-        /* code */
-        inputDigit = inputDigit/10;
 
 
+
+    if(inputDigit == 0){
+         printf("Total digits: 1");
+
+    }else{
+
+        int i =0;
+        for (; inputDigit != 0; i++)
+            {
+                /* code */
+                inputDigit = inputDigit/10;
+
+
+            }
+
+       printf("Total digits: %d", i);
     }
     
+    
 
-    printf("Total digits: %d", i);
+ 
     return 0;
 }
