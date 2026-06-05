@@ -10,7 +10,8 @@ int main (){
 
     int *iAmPointer = &a;
 
-    printf("%d",iAmPointer);
+    // printf("%d",iAmPointer);
+    printf("%d",*iAmPointer);
 
 
     return 0;
